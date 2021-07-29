@@ -19,7 +19,7 @@ namespace _2306calisma.YETKILENDIRME.CONNECTION
             builder["Integrated Security"] = true;
             builder["Initial Catalog"] = "KAYIT1";
             return builder.ConnectionString;
-            //AÇIKLAMA EKLENDİ RECEP İLE
+            //AÇIKLAMA EKLENDİ RECEP İLEsfdsdss
         }     
     }    
 } 
