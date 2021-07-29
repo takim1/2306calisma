@@ -28,8 +28,10 @@ namespace _2306calisma.YETKILENDIRME.ENTITIES
     {
         public string KULLANICI_ADICOMBO { get; set; }
 
+        //dagadgdhgfjh
+
     }
-   
+
 
 }
 
