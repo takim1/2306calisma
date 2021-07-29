@@ -22,7 +22,7 @@ namespace _2306calisma.YETKILENDIRME.BUSINESS
                 tmp1.Clear();
                 SqlCommand cmdkontol = new SqlCommand("Select * from INFORMATION_SCHEMA.TABLE_PRIVILEGES where GRANTEE = " + "'" + kullaniciadi + "'" + " ;", baglanti);
                 SqlDataAdapter dakontrol = new SqlDataAdapter(cmdkontol);
-                //recep yetki
+                //değişiklik
                 SqlDataReader drkontrol = cmdkontol.ExecuteReader();
                 while (drkontrol.Read())
                 {
