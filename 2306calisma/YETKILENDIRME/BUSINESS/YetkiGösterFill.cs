@@ -34,6 +34,7 @@ namespace _2306calisma.YETKILENDIRME.BUSINESS
                      TABLO_ADI = drkontrol["TABLE_NAME"].ToString(),
                      YETKI_TIPI = drkontrol["PRIVILEGE_TYPE"].ToString(),
                      YETKILI_MI = drkontrol["IS_GRANTABLE"].ToString(),
+                     //yetkigöster
                     });
                 }
             }
