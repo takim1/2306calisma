@@ -48,7 +48,7 @@ namespace _2306calisma.YETKILENDIRME.PAGES
             MessageBox.Show("Bağlantı Başarılı");
             Application.Current.MainWindow = new MainWindow();
             Application.Current.MainWindow.Show();
-            //açıklama ekleee
+            //açıklama ekleeewwww21w211w1
 
         }
     }
