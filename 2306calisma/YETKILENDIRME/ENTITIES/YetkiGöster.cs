@@ -19,7 +19,7 @@ namespace _2306calisma.YETKILENDIRME.ENTITIES
         public string YETKI_VEREN { get; set; }
         public string YETKI_ALAN { get; set; }
         public string VERI_TABANI { get; set; }
-        //public string TABLE_SCHEMA { get; set; }
+       
         public string TABLO_ADI{ get; set; }
         public string YETKI_TIPI { get; set; }
         public string YETKILI_MI { get; set; } 

@@ -35,7 +35,7 @@
         </TextBox>-->
         <Border Height="auto" Width="auto" Margin="10,10,-31,-29">
             <materialDesign:Flipper
-  materialDesign:ShadowAssist.ShadowDepth="Depth0" Margin="-11,10,-45,0" Height="399" VerticalAlignment="Top">
+  materialDesign:ShadowAssist.ShadowDepth="Depth0" Margin="115,37,-64,0" Height="315" VerticalAlignment="Top">
                 <materialDesign:Flipper.FrontContent>
                     <Grid
       Height="256"
@@ -161,7 +161,7 @@
                     </Grid>
                 </materialDesign:Flipper.BackContent>
             </materialDesign:Flipper>
-            
+
 
         </Border>
     </Grid>
