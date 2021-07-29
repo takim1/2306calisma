@@ -15,6 +15,7 @@ namespace _2306calisma.YETKILENDIRME.CONNECTION
             builder.UserID = kullanici.KULLANICI_ADI1;
             builder.Password = kullanici.SIFRE1;
             builder["Data Source"] = "SEMA\\SQLEXPRESS";
+            //yeni bir açıklama ekledim
             builder["Integrated Security"] = true;
             builder["Initial Catalog"] = "KAYIT1";
             return builder.ConnectionString;
