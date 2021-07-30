@@ -61,7 +61,7 @@ namespace _2306calisma.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to sema111.
         /// </summary>
         internal static string KULLANICI_ADI {
             get {
@@ -70,7 +70,7 @@ namespace _2306calisma.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to sema116.
         /// </summary>
         internal static string KULLANICI_SIFRESI {
             get {

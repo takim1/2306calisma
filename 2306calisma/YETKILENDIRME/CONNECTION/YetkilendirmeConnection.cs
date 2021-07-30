@@ -9,18 +9,21 @@ namespace _2306calisma.YETKILENDIRME.CONNECTION
 {
     public class YetkilendirmeConnection
     {
-        public static System.Data.SqlClient.SqlConnectionStringBuilder builder = new System.Data.SqlClient.SqlConnectionStringBuilder();
+        public static SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
         public static string GetConnectionString(YetkiliGiris1 kullanici)
         {
-            builder.UserID = kullanici.KULLANICI_ADI1;
+            builder.UserID =kullanici.KULLANICI_ADI1;
             builder.Password = kullanici.SIFRE1;
-            builder["Data Source"] = "SEMA\\SQLEXPRESS";
-   
-            builder["Integrated Security"] = true;
+            builder["Data Source"] = "192.168.1.41";
+            //builder["Integrated Security"] = true;
             builder["Initial Catalog"] = "KAYIT1";
             return builder.ConnectionString;
+            
          
-        }     
+        }   
+        
+
+       
     }    
 } 
 

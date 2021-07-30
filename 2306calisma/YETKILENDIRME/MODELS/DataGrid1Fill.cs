@@ -10,7 +10,7 @@ using System.Windows.Controls;
 
 namespace _2306calisma.YETKILENDIRME.MODELS
 {
-    class DataGrid1Fill
+    public class DataGrid1Fill
     {
         public static void DataGridFill(List<YetkiAta1> tmp2)
         {

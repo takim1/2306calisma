@@ -33,7 +33,7 @@ namespace _2306calisma.YETKILENDIRME.PAGES
         {
             InitializeComponent();
         }
-        MainWindow a = new MainWindow();
+        
 
         private void Baglan_Click(object sender, RoutedEventArgs e)
         {
@@ -42,13 +42,27 @@ namespace _2306calisma.YETKILENDIRME.PAGES
             gir.KULLANICI_ADI1  = TB_AD.Text;
             Properties.Settings.Default.KULLANICI_ADI = gir.KULLANICI_ADI1;
             Properties.Settings.Default.KULLANICI_SIFRE = gir.SIFRE1;
+            Properties.Settings.Default.Save();
 
-            SqlConnection SqlConnection = new SqlConnection(YetkilendirmeConnection.GetConnectionString(gir));
-            SqlConnection.Open();
-            MessageBox.Show("Bağlantı Başarılı");
+            try
+            {
+                SqlConnection SqlConnection = new SqlConnection(YetkilendirmeConnection.GetConnectionString(gir));
+                SqlConnection.Open();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Kullanici Adı veya Şifre Hatalı");
+                Environment.Exit(0);
+            }
+           
             Application.Current.MainWindow = new MainWindow();
             Application.Current.MainWindow.Show();
 
+
+            //MainWindow mainWindow = new MainWindow();
+            //mainWindow.Show();
+
+           
         }
     }
 }

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:_2306calisma.YETKILENDIRME.PAGES"
-              Height="447.375" Width="445" >
-    <Grid Margin="0,0,150,76">
+              Height="470" Width="445" >
+    <Grid Margin="0,0,140,65">
 
         <!--<Button
   Style="{DynamicResource MaterialDesignRaisedDarkButton}" 
@@ -35,7 +35,7 @@
         </TextBox>-->
         <Border Height="auto" Width="auto" Margin="10,10,-31,-29">
             <materialDesign:Flipper
-  materialDesign:ShadowAssist.ShadowDepth="Depth0" Margin="-11,10,-45,0" Height="399" VerticalAlignment="Top">
+  materialDesign:ShadowAssist.ShadowDepth="Depth0" Margin="-11,10,-45,-43" Height="423" VerticalAlignment="Top">
                 <materialDesign:Flipper.FrontContent>
                     <Grid
       Height="256"
@@ -161,7 +161,7 @@
                     </Grid>
                 </materialDesign:Flipper.BackContent>
             </materialDesign:Flipper>
-            
+
 
         </Border>
     </Grid>
