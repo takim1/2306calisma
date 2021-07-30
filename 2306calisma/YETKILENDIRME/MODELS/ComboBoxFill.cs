@@ -10,7 +10,7 @@ using System.Windows.Controls;
 
 namespace _2306calisma.YETKILENDIRME.MODELS
 {
-    class ComboBoxFill
+    public class ComboBoxFill
     {
         public static void PersonelTablo(string tabloadi, string sutun, ComboBox Box)
         {
@@ -21,10 +21,13 @@ namespace _2306calisma.YETKILENDIRME.MODELS
             YetkiliGiris1 yetkiligiris1 = new YetkiliGiris1();
             yetkiligiris1.KULLANICI_ADI1 = Properties.Settings.Default.KULLANICI_ADI;
             yetkiligiris1.SIFRE1 = Properties.Settings.Default.KULLANICI_SIFRE;
+            
             using (SqlConnection baglanti = new SqlConnection(YetkilendirmeConnection.GetConnectionString(yetkiligiris1)))
             {
+                
+
                 baglanti.Open();
-                SqlCommand cmdkontol = new SqlCommand("SELECT * FROM " + tabloadi + "", baglanti);
+                SqlCommand cmdkontol = new SqlCommand("SELECT * FROM " + tabloadi + " WHERE name NOT LIKE 'public' AND name NOT LIKE 'dbo' AND name NOT LIKE 'guest' AND name NOT LIKE 'INFORMATION_SCHEMA'  AND name NOT LIKE 'sys' AND name NOT LIKE 'db%'", baglanti);
                 cmdkontol.Connection = baglanti;
 
                 SqlDataAdapter dakontrol = new SqlDataAdapter(cmdkontol);
