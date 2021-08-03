@@ -37,7 +37,7 @@ namespace _2306calisma.YETKILENDIRME.BUSINESS
 
                         //değişiklik
 
-                        //Recep Değişiklik yaptıaaaasdfssdf
+                        //Recep Değişiklik yaptıaaaasdfsfsssdf
                        
 
                     });
