@@ -14,9 +14,9 @@ namespace _2306calisma.YETKILENDIRME.CONNECTION
         {
             builder.UserID =kullanici.KULLANICI_ADI1;
             builder.Password = kullanici.SIFRE1;
-            builder["Data Source"] = "192.168.1.41";
+            builder["Data Source"] = "192.168.4.98";
             //builder["Integrated Security"] = true;
-            builder["Initial Catalog"] = "KAYIT1";
+            builder["Initial Catalog"] = "EntityYetkilendirme";
             return builder.ConnectionString;
             
          
