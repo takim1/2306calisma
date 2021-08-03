@@ -27,14 +27,16 @@ namespace _2306calisma.YETKILENDIRME.BUSINESS
                 {
                     tmp1.Add(new YetkiGöster()
                     {
-                     YETKI_VEREN = drkontrol["GRANTOR"].ToString(),
-                     YETKI_ALAN = drkontrol["GRANTEE"].ToString(),
-                     VERI_TABANI = drkontrol["TABLE_CATALOG"].ToString(),
-                     //TABLE_SCHEMA = drkontrol["TABLE_SCHEMA"].ToString(),
-                     TABLO_ADI = drkontrol["TABLE_NAME"].ToString(),
-                     YETKI_TIPI = drkontrol["PRIVILEGE_TYPE"].ToString(),
-                     YETKILI_MI = drkontrol["IS_GRANTABLE"].ToString(),
-                  
+                        YETKI_VEREN = drkontrol["GRANTOR"].ToString(),
+                        YETKI_ALAN = drkontrol["GRANTEE"].ToString(),
+                        VERI_TABANI = drkontrol["TABLE_CATALOG"].ToString(),
+                        //TABLE_SCHEMA = drkontrol["TABLE_SCHEMA"].ToString(),
+                        TABLO_ADI = drkontrol["TABLE_NAME"].ToString(),
+                        YETKI_TIPI = drkontrol["PRIVILEGE_TYPE"].ToString(),
+                        YETKILI_MI = drkontrol["IS_GRANTABLE"].ToString(),
+
+                        //değişiklik
+
                     });
                 }
             }
