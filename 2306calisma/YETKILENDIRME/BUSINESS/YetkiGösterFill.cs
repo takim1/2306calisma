@@ -37,7 +37,7 @@ namespace _2306calisma.YETKILENDIRME.BUSINESS
                         YETKILI_MI = drkontrol["IS_GRANTABLE"].ToString(),
 
                         //değişiklik
-
+                        //sema değişiklik
                     });
                 }
             }
