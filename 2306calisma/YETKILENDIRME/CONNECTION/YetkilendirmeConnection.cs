@@ -14,11 +14,11 @@ namespace _2306calisma.YETKILENDIRME.CONNECTION
         {
             builder.UserID =kullanici.KULLANICI_ADI1;
             builder.Password = kullanici.SIFRE1;
-            builder["Data Source"] = "192.168.1.41";
-            //builder["Integrated Security"] = true;
+            builder["Data Source"] = "SEMA\\SQLEXPRESS";
+   
+            builder["Integrated Security"] = true;
             builder["Initial Catalog"] = "KAYIT1";
             return builder.ConnectionString;
-            
          
         }   
         
