@@ -115,6 +115,8 @@ namespace _2306calisma
                             if (item1.YETKI_TIPI == "UPDATE")
                             {
                                 item.UPDATE = true;
+
+                                //kapat
                             }
                         }
                     }
