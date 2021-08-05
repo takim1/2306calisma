@@ -23,8 +23,7 @@ namespace _2306calisma.YETKILENDIRME.CONNECTION
             builder["Initial Catalog"] = "KAYIT1"; 
 
             return builder.ConnectionString;
-         //cı denemesi
-         //deneme1234
+
         }   
         
 
