@@ -27,8 +27,9 @@ namespace _2306calisma.YETKILENDIRME.ENTITIES
     public class KullaniciAdi
     {
         public string KULLANICI_ADICOMBO { get; set; }
-
+        //todo yorum satırları silinecek
         //dagadgdhgfjhgagag
+        //eklemeee
 
     }
 

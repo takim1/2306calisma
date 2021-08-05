@@ -36,6 +36,7 @@ namespace _2306calisma.YETKILENDIRME.MODELS
                 {
 
                     Box.Items.Add(drkontrol[sutun].ToString());
+                    ///son değişiklik
                 }
             }
 
