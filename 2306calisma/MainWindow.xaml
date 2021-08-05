@@ -35,7 +35,7 @@
             <RowDefinition Height="42*"/>
         </Grid.RowDefinitions>
         <Button x:Name="yetki"  Content="Yetki Ata" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="125,31,372,24" Grid.Row="2" Width="138" Height="Auto" Click="Yetki_Click" />
-        <Button x:Name="hizliYetki" Content="Hızlı Yetkilendirme" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="295,31,183,24" Grid.Row="2" Width="157" Height="Auto" />
+        <Button x:Name="hizliYetki" Content="Hızlı Yetkilendirme" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="295,31,183,24" Grid.Row="2" Width="157" Height="Auto" Foreground="Black" />
         <Border Background="WhiteSmoke" Grid.Row="0" Grid.ColumnSpan="8"  VerticalAlignment="Top" Height="30" />
         <Button VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionLightButton}"
   ToolTip="MaterialDesignFloatingActionLightButton" Width="Auto" Height="24" Grid.Column="3" Margin="10,3,4,0" RenderTransformOrigin="1.564,-1.08"   >
@@ -48,7 +48,7 @@
         <Border Background="WhiteSmoke" Grid.Row="0" Grid.ColumnSpan="4"  VerticalAlignment="Top" Height="30" HorizontalAlignment="Left" Width="790" />
         <DataGrid x:Name="Dgv_Deneme"  Grid.Row="3" Grid.RowSpan="3"  ItemsSource="{Binding}"
                   AutoGenerateColumns="False"
-                  CanUserAddRows="False" HorizontalAlignment="Right" Width="780" Grid.ColumnSpan="4" >
+                  CanUserAddRows="False" HorizontalAlignment="Right" Width="780" Grid.ColumnSpan="4" SelectionChanged="Dgv_Deneme_SelectionChanged" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="TABLO ADI" Binding="{Binding TABLO_ADI1}"/>
                 <DataGridTemplateColumn Header="SELECT">
