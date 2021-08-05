@@ -124,6 +124,11 @@ namespace _2306calisma
             }
         }
         #endregion
+
+        private void Dgv_Deneme_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
 
