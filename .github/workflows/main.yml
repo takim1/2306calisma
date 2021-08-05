@@ -24,13 +24,20 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      - name: setup-msbuild
+        uses: microsoft/setup-msbuild@v1
+       
+       
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5 
+        
+          
+      - name: Restore NuGet packages
+        run: nuget restore 2306calisma.sln
+        
+      - name: Build the Solution
+        run: msbuild 2306calisma.sln
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+
