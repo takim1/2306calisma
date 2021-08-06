@@ -23,6 +23,8 @@ namespace _2306calisma.YETKILENDIRME.CONNECTION
 
             return builder.ConnectionString;
 
+
+
         }   
         
 
